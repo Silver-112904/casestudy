@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0a0f1e 0%, #0c1222 100%);
+    min-height: 100vh;
+    color: #eef2ff;
+}
+
+/* Glass navbar */
+.navbar {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(71, 85, 105, 0.4);
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    background: linear-gradient(135deg, #3b82f6, #06b6d4);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-links {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.nav-links a:hover {
+    color: white;
+}
+
+.coin-badge {
+    background: rgba(245, 158, 11, 0.2);
+    padding: 6px 14px;
+    border-radius: 40px;
+    color: #fbbf24;
+    font-weight: 600;
+}
+
+.btn {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+    border: none;
+    padding: 10px 24px;
+    border-radius: 40px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 32px;
+}
+
+.glass-card {
+    background: rgba(15, 23, 42, 0.6);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    border-radius: 24px;
+    padding: 24px;
+    transition: all 0.2s;
+}
+
+.glass-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(59, 130, 246, 0.5);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 24px;
+    margin-top: 24px;
+}
+
+.badge {
+    padding: 4px 12px;
+    border-radius: 40px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.badge-sell { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+.badge-swap { background: rgba(168, 85, 247, 0.2); color: #c084fc; }
+.badge-barter { background: rgba(59, 130, 246, 0.2); color: #60a5fa; }
+
+input, select, textarea {
+    background: rgba(0, 0, 0, 0.4);
+    border: 1px solid rgba(71, 85, 105, 0.4);
+    padding: 10px 16px;
+    border-radius: 12px;
+    color: white;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+h1, h2 {
+    margin-bottom: 16px;
+}
+
+.alert {
+    padding: 12px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.success { background: rgba(34, 197, 94, 0.2); color: #4ade80; }
+.error { background: rgba(239, 68, 68, 0.2); color: #f87171; }
+
+/* Back button */
+.back-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(71, 85, 105, 0.3);
+    padding: 8px 20px;
+    border-radius: 40px;
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 14px;
+    margin-bottom: 24px;
+    transition: all 0.2s;
+    width: fit-content;
+}
+
+.back-button:hover {
+    background: rgba(59, 130, 246, 0.2);
+    border-color: #3b82f6;
+    color: white;
+    transform: translateX(-4px);
+}
